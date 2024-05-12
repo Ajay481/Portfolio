@@ -1,0 +1,47 @@
+import pic from "../assets/ajay.jpeg";
+import resume from "../../public/Ajay_Resume.pdf";
+import { BackgroundGradient } from "./Background-Gradient";
+
+function Hero() {
+  return (
+    <div className="flex border-b bg-primary border-orange justify-between w-full h-full px-6 md:px-16">
+      <div className="border-x border-orange flex flex-col-reverse justify-center  w-full h-full px-16 py-32 lg:flex-row">
+        <div className="flex-1 text-left">
+          <h3 className="text-white text-xl my-6">Hello</h3>
+          <h1 className="text-green text-2xl mb-3 font-Bungee animate-bounce">
+            I am Ajay Yadav
+          </h1>
+          <p className="text-white mb-10">Frontend Developer</p>
+          <p className="text-white font-Bungee">
+            I am a Frontend Developer. I like to contribute to cutting-edge
+            projects, collaborate with talented professionals, and continuously
+            grow my skills in a dynamic and innovative environment. I am
+            passionate about technology, enjoy solving complex problems, and
+            thrive in a collaborative setting.
+          </p>
+          <div className="flex mt-10 gap-10 justify-start w-full">
+            <a
+              href={resume}
+              className="bg-white text-black p-4 rounded-full hover:bg-orange"
+              download="Ajay_Yadav_Resume"
+              target="_blank"
+            >
+              Download CV
+            </a>
+          </div>
+        </div>
+        <div className="flex justify-center lg:justify-end items-center z-0 flex-1 w-full">
+          <BackgroundGradient>
+            <img
+              className="w-10/12 h-96 rounded-lg m-4 sm:m-6"
+              src={pic}
+              loading="lazy"
+            />
+          </BackgroundGradient>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Hero;
