@@ -20,10 +20,18 @@ function Projects() {
               <img src={portfolio} className="w-full h-full" />
               <div className="flex gap-10 justify-between w-full p-6 ">
                 <h3 className="font-semibold">Portfolio</h3>
-                <a href="" target="_blank" className="hover:text-red-500">
+                <a
+                  href="https://ajayyadavportfolio.netlify.app/"
+                  target="_blank"
+                  className="hover:text-red-500"
+                >
                   <FaExternalLinkAlt />
                 </a>
-                <a href="" target="_blank" className="hover:text-red-500">
+                <a
+                  href="https://github.com/Ajay481/Portfolio"
+                  target="_blank"
+                  className="hover:text-red-500"
+                >
                   <FaGithub size={20} />
                 </a>
               </div>
